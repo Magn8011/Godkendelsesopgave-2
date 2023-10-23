@@ -15,6 +15,7 @@ import SignUpForm from './components/SignUpForm';
 import HomeScreen from "./components/HomeScreen";
 import SettingsScreen from './components/SettingScreen';
 import StackNavigator from "./components/StackNavigator";
+import Scan from "./components/Scan";
 
 // Opret en bundnavigation til at skifte mellem skærme og importer vores komponenter
 const Tab = createBottomTabNavigator();
@@ -57,6 +58,7 @@ export default function App() {
           <Tab.Screen name="Home" component={HomeScreen} />
           <Tab.Screen name="Settings" component={SettingsScreen} />
           <Tab.Screen name="Stack" component={StackNavigator} />
+          <Tab.Screen name="Scan" component={Scan} /> 
         </Tab.Navigator>
       ) : (
 // Brugeren er ikke logget ind, vis login-siderne

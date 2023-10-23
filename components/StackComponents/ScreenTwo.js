@@ -13,13 +13,13 @@ mens det andet knap bruges til at navigere til den næste skærm i mappen "Stack
 function ScreenTwo({navigation}) {
     return (
         <View style={styles.container}>
-            <Text style={styles.text}>Interne konsulenter!</Text>
+            <Text style={styles.text}>Nyt view!</Text>
             <View style={{display: 'flex', justifyContent: 'space-evenly', flexDirection: 'column'}}>
                 <View style={{margin: '2%'}} >
                     <Button title="Gå tilbage" onPress={() => navigation.goBack() } />
                 </View>
                 <View style={{margin: '2%'}} >
-                    <Button title="Gå til eksterne konsulenter" onPress={() => navigation.navigate('ScreenOne')}  />
+                    <Button title="Gå til virksomhedernes lister" onPress={() => navigation.navigate('ScreenOne')}  />
                 </View>
             </View>
         </View>

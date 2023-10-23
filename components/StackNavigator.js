@@ -5,6 +5,7 @@ import ScreenTwo from "./StackComponents/ScreenTwo";
 import DetailsScreen from "./DetailScreen";
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
+import ScanScreen from "./Scan";
 
 // Her instantieres en StackNavigator.
 const Stack = createStackNavigator();
@@ -52,8 +53,18 @@ function StackNavigator() {
                     headerStyle: { backgroundColor: '#628bba' } 
                 }}
             />
+            <Stack.Screen
+        name="Scan"
+        component={ScanScreen}
+        options={{
+          headerTitleAlign: 'center',
+          headerTitleStyle: { color: 'white' },
+          headerStyle: { backgroundColor: '#62bab5' },
+        }}
+
+    />
         </Stack.Navigator>
-    )
+    );
 }
 
 // Eksport af den funktionelle komponent, så den kan importeres i andre komponenter

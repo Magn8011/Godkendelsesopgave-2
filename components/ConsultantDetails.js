@@ -28,4 +28,3 @@ function ConsultantDetails({ route }) {
 
 // Eksportér ConsultantDetails komponenten som standard eksport
 export default ConsultantDetails;
-

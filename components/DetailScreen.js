@@ -17,13 +17,13 @@ function DetailsScreen({ navigation }) {
         // Opretter en View (visuel container) med specifikke stilarter, herunder at centrere indholdet vandret.
         <View style={[styles.container, { alignItems: 'center' }]}>
             {/* Viser en tekst med specifikke stilarter */}
-            <Text style={styles.text}>Interne eller eksterne konsulentlister?</Text>
+            <Text style={styles.text}>Gå til konsulentlister eller til virksomhedslister</Text>
             
             {/* Viser en knap med titlen "Gå til eksterne konsulenter" og en funktion, der kaldes, når knappen trykkes. Funktionen bruger 'navController' til at navigere til 'ScreenOne'. */}
-            <Button title="Gå til eksterne konsulenter" onPress={() => navController(navigation, 'ScreenOne')} />
+            <Button title="Gå til virksomheder" onPress={() => navController(navigation, 'ScreenOne')} />
             
             {/* Viser en knap med titlen "Gå til interne konsulenter" og en funktion, der kaldes, når knappen trykkes. Funktionen bruger 'navController' til at navigere til 'ScreenTwo'. */}
-            <Button title="Gå til interne konsulenter" onPress={() => navController(navigation, 'ScreenTwo')} />
+            <Button title="Gå til konsulenter" onPress={() => navController(navigation, 'ScreenTwo')} />
         </View>
     );
 }
